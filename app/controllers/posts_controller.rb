@@ -14,6 +14,6 @@ class PostsController < ApplicationController
   # add create method here
   def create 
     @post = Post.create(params[:post])
-    redirect_to :'posts#show'
+    redirect_to :''/posts/:id(.:format)
   end
 end
