@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
   def create 
     @post = Post.create(params[:post])
-    redirect_to :'/post'
+    redirect_to :'/posts'
   end
   
 end
