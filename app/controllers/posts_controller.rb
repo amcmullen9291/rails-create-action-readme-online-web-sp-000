@@ -15,4 +15,5 @@ class PostsController < ApplicationController
   def create 
 
     redirect_to :'post#index'
+  end
 end
