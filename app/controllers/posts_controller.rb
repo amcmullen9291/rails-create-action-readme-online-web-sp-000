@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
   # add create method here
   def create 
-
-    redirect_to :'post#show'
+@post = Post.create(params[:post])
+    redirect_to :'posts#show'
   end
 end
