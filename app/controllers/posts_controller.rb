@@ -13,7 +13,8 @@ class PostsController < ApplicationController
   end
 
   def create 
-    @post = Post.ew(:title => params[:title], :description => params[:description])
+    @post = Post.new(:title => params[:title], :description => params[:description])
+    @post.save
     redirect_to :'/posts'
   end
   
