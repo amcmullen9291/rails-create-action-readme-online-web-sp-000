@@ -15,5 +15,5 @@ class PostsController < ApplicationController
   def create 
     @post = Post.create(params[:post])
     
-    redirect_to post#index'
+    redirect_to :'post#index'
 end
