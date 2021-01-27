@@ -14,6 +14,6 @@ class PostsController < ApplicationController
   # add create method here
   def create 
 
-    redirect_to :'post#index'
+    redirect_to :'post#show'
   end
 end
